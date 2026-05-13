@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        border-radius: 10px;
+        border: 2px solid black;
+        margin: auto;
+        height: 200px;
+        width: 450px;
+        padding: 30px;
+      }
+      button {
+        background-color: cadetblue;
+        font-size: 20px;
+        margin-top: 20px;
+        width: 95%;
+        padding: 3px;
+      }
+      h2 {
+        margin-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        
+      }
+      result {
+        margin: 20px;
+      }
+    </style>
+    <script>
+      function Calculate() {
+        let no1 = parseFloat(document.getElementById("no1").value);
+        let no2 = parseFloat(document.getElementById("no2").value);
+        let operator = document.getElementById("operator").value;
+        let result;
+        if (operator === "+") {
+          result = no1 + no2;
+        } else if (operator === "-") {
+          result = no1 - no2;
+        } else if (operator === "*") {
+          result = no1 * no2;
+        } else if (operator === "/") {
+          result = no1 / no2;
+        }
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Mini Calculator</h2>
+      <input type="number" value="45" id="no1" />
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="number" value="45" id="no2" />
+      <div class="cal">
+        <button onclick="Calculate()">Calculate Amount</button>
+      </div>
+      <div class="result">
+        Result:
+        <span class="result" id="result">0</span>
+      </div>
+    </div>
+  </body>
+</html>

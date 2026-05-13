@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1</title>
+    <style>
+    
+        .card{
+            border-radius: 10px;
+            background-color: aquamarine;
+            border-color: black;
+            
+            padding-left: 10px;
+            border: 5px dotted;
+            gap: 30px;
+        
+        }
+        .body{
+            background-color: cadetblue;
+
+
+            
+
+        }
+        .container{
+            display: flex;
+            
+            border-radius: 10px;
+            background-color: blueviolet;
+            gap: 30px;
+            width: 80%;
+            padding: 20px;
+            margin-top: 10px;
+
+
+        }
+        .controls{
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+
+        }
+        .ageform{
+            display: flex;
+            gap: 60px;
+
+        }
+        .ageAlign{
+            display: flex;
+        }
+        p{display: inline-block;
+        }
+        .nextcontainer{
+            text-align: center;
+            
+
+        }
+        .main{
+            background-color: rgb(103, 166, 222);
+            width: 80%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+    <div class="main">
+    
+    <div class="container">
+            <section class="controls">
+
+            </section>
+            <section class="output">
+
+            </section>
+        <div class="ageform">
+        <div>
+            <h2>Update Variable</h2>
+            <div>
+                <label for="name">Name</label>
+                <div>
+                    <input type="text" id="name" value="mg mg"></input>
+                </div>   
+
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <div>
+                    <input type="text" id="age" value="mg mg"></input>
+                </div>   
+
+            </div>
+            <div>
+                <label for="vipmember">Vip Member</label>
+                <div>
+                    <input type="checkbox" id="age" value="card"></input>
+                </div>   
+
+            </div>
+            <div>
+                <label for="color">Card Color</label>
+                <div>
+                    <input type="color" id="color" value="card"></input>
+                </div>   
+
+            </div>
+        </div>
+    <div>
+        <h2>Live Dom</h2> 
+        <div class="card">
+            <h3 id="nameOutput">Sample Name</h3>
+            <div class="ageAlign">
+                <div>Age:<p id="ageAlign">40</p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+<div class="nextcontainer">
+    <h2>Next Container</h2>
+</div>
+</div>
+    
+</body>
+</html>

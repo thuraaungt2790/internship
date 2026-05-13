@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 100px;
+      }
+
+      .logo {
+        background-color: darkslategrey;
+        border: 90%;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+      }
+      a {
+        text-decoration: none;
+        margin-left: 20px;
+        color: white;
+      }
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+      }
+      .feature {
+        border: 100px;
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .featurebox {
+        background-color: bisque;
+        text-align: center;
+        width: 800px;
+      }
+      .panel {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+      }
+      .controls {
+        background-color: linen;
+        justify-content: center;
+        padding: 30px;
+        width: 50%;
+      }
+
+      .container {
+        background-color: coral;
+        border: 100px;
+        padding: 30px;
+        width: 50%;
+        justify-content: center;
+        display: flex;
+      }
+      .a {
+        background-color: chocolate;
+        padding: 25px;
+        width: 300px;
+        height: 100px;
+        margin-top: 50px;
+      }
+      .lab select {
+        width: 100%;
+      }
+      .btn {
+        width: 200px;
+        height: 50px;
+        display: flex;
+        gap: 10px;
+        font-size: 2px;
+        cursor: pointer;
+      }
+
+      .p {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>CSS Utility Simulator</h2>
+    <p class="p">
+      Change the input below to see how atomic classes combine to build US
+    </p>
+    <nav class="logo">
+      <h2>MyLogo</h2>
+      <div class="logolink">
+        <a href="dday1">Home</a>
+        <a href="dday2">About</a>
+        <a href="dday3">Contact</a>
+      </div>
+    </nav>
+
+    <div class="feature">
+      <div class="featurebox">feature1</div>
+      <div class="featurebox">Feature2</div>
+      <div class="featurebox">Feature3</div>
+    </div>
+
+    <div class="panel">
+      <div class="controls">
+        <h2>Utility Controls</h2>
+        <div class="lab">
+          <label for="Padding(Spacing)">Padding(Spacing)</label>
+
+          <select>
+            <option>Medium(p-8)</option>
+          </select>
+        </div>
+
+        <div class="lab">
+          <label for="background">Background Theme(Colors)</label>
+
+          <select>
+            <option>Primary Blue</option>
+          </select>
+        </div>
+
+        <div class="lab">
+          <label for="textsize">Text Size(Typography)</label>
+
+          <div>
+            <select>
+              <option>Large(text-xl)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="lab">
+          <label for="corner">Corner Radius(Borders)</label>
+
+          <div>
+            <select>
+              <option>Square(rouned-none)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="lab">
+          <label for="shadow">Shadow(depth)</label>
+          <div>
+            <select>
+              <option>Medium(shadow md)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="a">
+          <h2>Alex Walk</h2>
+          <p>
+            Full-Stack Web Developer building awesome things with Tailwind CSS.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="btn">
+      <button>Submit</button>
+      <button>Hover Me Slowly</button>
+    </div>
+    
+  </body>
+</html>
