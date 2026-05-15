@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Utility Simulator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<div>
+    <h2 class="font-bold text-xl">Tailwind Utility Simulator</h2>
+    <p class="text-xs">
+        Change the inputs below to see how atomic classes combine to build UIs
+    </p>
+
+    <nav class="bg-gray-500 rounded flex justify-between items-center p-4">
+        <h2 class="text-white font-bold text-xl sm:text-sm">MyLogo</h2>
+        <div class="text-white font-bold px-4 hidden md:flex gap-4 ">
+            <a href="dday1">Home</a>
+            <a href="dday2">About</a>
+            <a href="dday3">Contact</a>
+        </div>
+        <div class="md:hidden text-white font-bold">
+            ☰
+        </div>
+    </nav>
+
+    <div  class="bg-red-400 p-6 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center text-xl text-white mb-2">
+        <div class="bg-yellow-300 py-6">Feature1</div>
+        <div class="bg-yellow-300 py-6">Feature2</div>
+        <div class="bg-yellow-300 py-6 ">Feature3</div>
+    </div>
+
+    <div class=" gap-6 grid  md:grid-cols-2 p-4">
+        <div class="bg-green-300 p-4 rounded-lg">
+            <h2 class="font-bold text-2xl text-white mb-6 ">Utility Controls</h2>
+            <div class="gap-2 flex flex-col">
+                <div>
+                    <label for="Padding(Spacing)" class="text-white">Padding(Spacing)</label>
+                    <div>
+
+                        <select class="w-full">
+                            <option>Medium(p-8)</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div>
+                    <label for="background" class="text-white ">Background Theme(Colors)</label>
+                    <div>
+                        <select class="w-full">
+                            <option>Primary Blue</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="textsize" class="text-white ">Text Size(Typography)</label>
+
+                    <div>
+                        <select class="w-full">
+                            <option>Large(text-xl)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="corner" class="text-white ">Corner Radius(Borders)</label>
+
+                    <div>
+                        <select class="w-full">
+                            <option>Square(rouned-none)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="shadow" class="text-white ">Shadow(depth)</label>
+                    <div>
+                        <select class="w-full">
+                            <option>Medium(shadow md)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-lg bg-slate-100  p-4">
+
+
+
+
+            <div class="bg-gray-300 p-4 rounded-lg  ">
+                <div class="bg-lightgray-300  rounded-lg  p-4">
+                    <h2>Alex Walk</h2>
+                    <p>
+                        Full-Stack Web Developer building awesome things with Tailwind CSS.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-slate-500 text-white p-4 rounded-lg  mt-4 overflow-auto flex flex-col gap-2">
+                <p>
+                    &lt;div class="p-4 bg-blue-500 text-white rounded-xl shadow-lg"&gt;
+                    &lt;h2 class="font-bold"&gt;Alex Walker&lt;/h2&gt;
+                    &lt;p class="text-sm"&gt;
+                    Full-Stack Web Developer
+                    &lt;/p&gt;
+
+                    &lt;/div&gt;
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="flex gap-4 justify-center mt-4">
+    <button class="bg-blue-500 text-white p-2 rounded">Submit</button>
+    <button class="bg-white text-black p-2 rounded">Read More</button>
+    <button class="bg-blue-500 text-white p-2 rounded">Hover Me Slowly</button>
+</div>
+
+</body>
+
+</html>
+
+</div>
+</body>
+
+</html>
