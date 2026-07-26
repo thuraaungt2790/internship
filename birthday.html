@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== INTRO CAKE SCENE ===== -->
+    <section id="cake-scene" class="scene active">
+        <div class="cake-container">
+            <h1 class="cake-title">Happy Birthday အချစ်ကလေးရေ <span class="heart-icon">❤️</span></h1>
+
+            <!-- Birthday Cake SVG -->
+            <div class="cake-wrapper">
+                <div class="candles" id="candles">
+                    <div class="candle" style="--i:1"><div class="flame"></div><div class="wick"></div></div>
+                    <div class="candle" style="--i:2"><div class="flame"></div><div class="wick"></div></div>
+                    <div class="candle" style="--i:3"><div class="flame"></div><div class="wick"></div></div>
+                    <div class="candle" style="--i:4"><div class="flame"></div><div class="wick"></div></div>
+                    <div class="candle" style="--i:5"><div class="flame"></div><div class="wick"></div></div>
+                </div>
+                <div class="cake">
+                    <div class="cake-layer top">
+                        <div class="frosting"></div>
+                    </div>
+                    <div class="cake-layer middle">
+                        <div class="drip drip-1"></div>
+                        <div class="drip drip-2"></div>
+                        <div class="drip drip-3"></div>
+                        <div class="drip drip-4"></div>
+                    </div>
+                    <div class="cake-layer bottom"></div>
+                    <div class="plate"></div>
+                </div>
+            </div>
+
+            <!-- Blow wind effect -->
+            <div class="blow-particles" id="blow-particles"></div>
+
+            <button id="cake-btn" class="cake-button">မီးထွန်း 🎂</button>
+        </div>
+
+        <!-- Floating hearts background -->
+        <div class="floating-hearts" id="cake-hearts"></div>
+    </section>
+
+    <!-- ===== GIFT BOX / WELCOME SCENE ===== -->
+    <section id="gift-scene" class="scene">
+        <div class="stars-bg" id="stars-bg"></div>
+        <div class="floating-hearts" id="gift-hearts"></div>
+        <div class="gift-container">
+            <h2 class="gift-title">Special surprise for you...</h2>
+            <div class="gift-box" id="gift-box">
+                <div class="gift-lid">
+                    <div class="ribbon-v"></div>
+                    <div class="ribbon-h"></div>
+                    <div class="bow">
+                        <div class="bow-left"></div>
+                        <div class="bow-right"></div>
+                        <div class="bow-center"></div>
+                    </div>
+                </div>
+                <div class="gift-body">
+                    <div class="ribbon-v-body"></div>
+                    <div class="ribbon-h-body"></div>
+                </div>
+                <div class="gift-glow"></div>
+            </div>
+            <p class="gift-hint">Gift box ကို နှိပ်ပါ...</p>
+        </div>
+    </section>
+
+    <!-- ===== MAIN SURPRISE SCENE ===== -->
+    <section id="surprise-scene" class="scene">
+
+        <!-- Slideshow -->
+        <div class="slideshow" id="slideshow"></div>
+
+        <!-- Confetti canvas -->
+        <canvas id="confetti-canvas"></canvas>
+
+        <!-- Fireworks canvas -->
+        <canvas id="fireworks-canvas"></canvas>
+
+        <!-- Balloons -->
+        <div class="balloons" id="balloons"></div>
+
+        <!-- Floating hearts -->
+        <div class="floating-hearts" id="surprise-hearts"></div>
+
+        <!-- Message overlay -->
+        <div class="message-overlay">
+            <div class="message-box glass">
+                <div class="typing-text" id="typing-text"></div>
+            </div>
+        </div>
+
+        <!-- Big final message -->
+        <div class="final-message" id="final-message">
+            <h1 class="glow-text">Happy Birthday Par ❤️</h1>
+            <button id="replay-btn" class="replay-button">Replay Surprise</button>
+        </div>
+    </section>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop preload="auto">
+        <source src="audio/mpeg/music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music toggle -->
+    <button id="music-toggle" class="music-toggle-btn" style="display:none;">🎵</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
